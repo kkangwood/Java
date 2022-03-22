@@ -1,0 +1,26 @@
+//sourcecode
+
+//비트 반전시키는것 까지는 어찌저찌 했는데 2진수로 변환하는부분은 막혀서 일단은 연산자로 대체해놨습니다.
+
+import java.util.*;
+
+public class Ex3 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int A = input.nextInt();
+		  
+		String B = Integer.toBinaryString(A);
+		
+		for (char ch : B.toCharArray()) {
+			
+			if(ch == '1') {
+				System.out.print(0);
+			} else {
+				System.out.print(1);
+			}
+		}	
+		
+	
+	}
+}
